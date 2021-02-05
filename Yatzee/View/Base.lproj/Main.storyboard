@@ -29,66 +29,91 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="seE-BB-WMA" userLabel="Saved Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="332" height="60"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savedbackground" translatesAutoresizingMaskIntoConstraints="NO" id="LUT-gn-mqN" userLabel="img1">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXC-G0-EQo" userLabel="saved1">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="7yC-Uv-Whh"/>
-                                                    <constraint firstAttribute="width" constant="60" id="MJf-Bf-hbR"/>
+                                                    <constraint firstAttribute="height" constant="60" id="ruS-I7-prk"/>
+                                                    <constraint firstAttribute="width" constant="60" id="tMa-t4-Vus"/>
                                                 </constraints>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savedbackground" translatesAutoresizingMaskIntoConstraints="NO" id="H1L-oz-MJS" userLabel="img2">
+                                                <state key="normal" image="savedbackground"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUS-h5-sBV" userLabel="saved2">
                                                 <rect key="frame" x="68" y="0.0" width="60" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="60" id="LkM-go-pHq"/>
-                                                    <constraint firstAttribute="height" constant="60" id="cQK-In-p7B"/>
+                                                    <constraint firstAttribute="width" constant="60" id="EFe-2z-a0C"/>
+                                                    <constraint firstAttribute="height" constant="60" id="LBj-Kh-lA9"/>
                                                 </constraints>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savedbackground" translatesAutoresizingMaskIntoConstraints="NO" id="eFF-gT-X5b" userLabel="img3">
+                                                <state key="normal" image="savedbackground"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elL-Zj-dJo" userLabel="saved3">
                                                 <rect key="frame" x="136" y="0.0" width="60" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="60" id="TPy-Vr-bSt"/>
-                                                    <constraint firstAttribute="height" constant="60" id="t7U-VG-wkd"/>
+                                                    <constraint firstAttribute="width" constant="60" id="Kf4-r9-pT3"/>
+                                                    <constraint firstAttribute="height" constant="60" id="QnF-J2-nS7"/>
                                                 </constraints>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savedbackground" translatesAutoresizingMaskIntoConstraints="NO" id="B42-2h-Ego" userLabel="img4">
+                                                <state key="normal" image="savedbackground"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBS-HD-QNb" userLabel="saved4">
                                                 <rect key="frame" x="204" y="0.0" width="60" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="60" id="6Rb-CM-afJ"/>
-                                                    <constraint firstAttribute="height" constant="60" id="aKW-VI-WRb"/>
+                                                    <constraint firstAttribute="width" constant="60" id="Hp0-gH-mUI"/>
+                                                    <constraint firstAttribute="height" constant="60" id="pcj-ZT-qTh"/>
                                                 </constraints>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savedbackground" translatesAutoresizingMaskIntoConstraints="NO" id="vDw-W9-lH9" userLabel="img5">
+                                                <state key="normal" image="savedbackground"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Dp-f5-g7i" userLabel="saved5">
                                                 <rect key="frame" x="272" y="0.0" width="60" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="d1s-qT-Vj6"/>
-                                                    <constraint firstAttribute="width" constant="60" id="iia-uK-JTB"/>
+                                                    <constraint firstAttribute="height" constant="60" id="2uT-Kc-WIf"/>
+                                                    <constraint firstAttribute="width" constant="60" id="wO1-DH-B94"/>
                                                 </constraints>
-                                            </imageView>
+                                                <state key="normal" image="savedbackground"/>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QP7-id-kL9">
                                         <rect key="frame" x="0.0" y="110" width="332" height="100"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="3VM-Hr-nsS">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoM-1g-Cxo">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceTwo" translatesAutoresizingMaskIntoConstraints="NO" id="Ukb-Rh-M7F">
+                                                <state key="normal" image="DiceOne"/>
+                                                <connections>
+                                                    <action selector="diceSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LUX-hc-U8o"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1To-2g-F5s">
                                                 <rect key="frame" x="116" y="0.0" width="100" height="100"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="DiceThree" translatesAutoresizingMaskIntoConstraints="NO" id="w7u-m5-crz">
+                                                <state key="normal" image="DiceTwo"/>
+                                                <connections>
+                                                    <action selector="diceSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qs5-xg-H3y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iah-iR-noh">
                                                 <rect key="frame" x="232" y="0.0" width="100" height="100"/>
-                                            </imageView>
+                                                <state key="normal" image="DiceThree"/>
+                                                <connections>
+                                                    <action selector="diceSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HAS-cM-doD"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="center" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="89r-cR-b7o">
                                         <rect key="frame" x="0.0" y="260" width="332" height="100"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceFour" translatesAutoresizingMaskIntoConstraints="NO" id="Ifr-JO-j3x">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZx-SJ-rp1">
                                                 <rect key="frame" x="0.0" y="0.0" width="161" height="100"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceFive" translatesAutoresizingMaskIntoConstraints="NO" id="G9v-7S-Zoc">
+                                                <state key="normal" image="DiceFour"/>
+                                                <connections>
+                                                    <action selector="diceSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hbj-zi-uEC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUN-YD-xLm">
                                                 <rect key="frame" x="171" y="0.0" width="161" height="100"/>
-                                            </imageView>
+                                                <state key="normal" image="DiceFive"/>
+                                                <connections>
+                                                    <action selector="diceSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EUJ-L1-Eie"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -106,6 +131,9 @@
                                 <state key="normal" title="Roll">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="rollPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rmR-bV-0kH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -125,6 +153,20 @@
                             <constraint firstItem="sSO-Eu-45w" firstAttribute="top" secondItem="Llw-CX-VBp" secondAttribute="bottom" constant="50" id="xgK-tD-Erh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dice1" destination="NoM-1g-Cxo" id="Yyn-e7-PWT"/>
+                        <outlet property="dice2" destination="1To-2g-F5s" id="bRb-SZ-tMv"/>
+                        <outlet property="dice3" destination="iah-iR-noh" id="BaN-NJ-tFm"/>
+                        <outlet property="dice4" destination="fZx-SJ-rp1" id="IMh-ZR-rwT"/>
+                        <outlet property="dice5" destination="eUN-YD-xLm" id="Uwe-xW-Jej"/>
+                        <outlet property="diceLabel" destination="sSO-Eu-45w" id="wKb-wi-bcd"/>
+                        <outlet property="rollButton" destination="Vau-hd-gbp" id="NLE-v6-5On"/>
+                        <outlet property="saved1" destination="PXC-G0-EQo" id="lGD-bs-pw3"/>
+                        <outlet property="saved2" destination="fUS-h5-sBV" id="0PW-cj-tro"/>
+                        <outlet property="saved3" destination="elL-Zj-dJo" id="RUm-d4-KRq"/>
+                        <outlet property="saved4" destination="jBS-HD-QNb" id="wO2-UZ-MUD"/>
+                        <outlet property="saved5" destination="2Dp-f5-g7i" id="Qip-UR-v3D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
