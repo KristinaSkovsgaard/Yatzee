@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Yatzee
 //
-//  Created by App og Blog on 05/02/2021.
+//  Created by Kristina Skovsgaard on 05/02/2021.
 //
 
 import UIKit
@@ -26,11 +26,17 @@ class ViewController: UIViewController {
     
     var diceRoll: Int = 0
     
-    var currentDice1: UIImage?
-    var currentDice2: UIImage?
-    var currentDice3: UIImage?
-    var currentDice4: UIImage?
-    var currentDice5: UIImage?
+    var currentDice1 = Die(dieNo: 1, dieDots: 1)
+    var currentDice2 = Die(dieNo: 2, dieDots: 2)
+    var currentDice3 = Die(dieNo: 3, dieDots: 3)
+    var currentDice4 = Die(dieNo: 4, dieDots: 4)
+    var currentDice5 = Die(dieNo: 5, dieDots: 5)
+    
+    var savedDice1 = Die(dieNo: 1, dieDots: 0)
+    var savedDice2 = Die(dieNo: 2, dieDots: 0)
+    var savedDice3 = Die(dieNo: 3, dieDots: 0)
+    var savedDice4 = Die(dieNo: 4, dieDots: 0)
+    var savedDice5 = Die(dieNo: 5, dieDots: 0)
     
     var diceSaved:[Int] = []
     
@@ -42,32 +48,30 @@ class ViewController: UIViewController {
         
         diceLabel.text = "Roll the dice three times."
         
-        
-        
     }
     
 
     @IBAction func rollPressed(_ sender: UIButton) {
         
+        let rollButtons = [currentDice1, currentDice2, currentDice3, currentDice4, currentDice5]
+        
+        var currentRoll:[Die] = []
+        
+        for die in rollButtons{
+            if die.stillRolling{
+                currentRoll.append(die)
+            }
+        }
+        print("Still rolling: \(currentRoll.count)")
+        
         if(diceRoll<3){
             diceRoll += 1
             
-            
-            //let rollNumbers = [1,2,3,4,5,6]
-            
-            let diceArray = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo"),#imageLiteral(resourceName: "DiceThree"),#imageLiteral(resourceName: "DiceFour"),#imageLiteral(resourceName: "DiceFive"),#imageLiteral(resourceName: "DiceSix")]
-            
-            currentDice1 = diceArray.randomElement()
-            dice1.imageView?.image = currentDice1
-            
-            currentDice2 = diceArray.randomElement()
-            dice2.imageView?.image = currentDice2
-            currentDice3 = diceArray.randomElement()
-            dice3.imageView?.image = currentDice3
-            currentDice4 = diceArray.randomElement()
-            dice4.imageView?.image = currentDice4
-            currentDice5 = diceArray.randomElement()
-            dice5.imageView?.image = currentDice5
+            for dieRolling in currentRoll{
+                
+                dieRolling.dieDots = Int.random(in: 1...6)
+                setDieImage(die: dieRolling)
+            }
             
             if(diceRoll == 3){
                 diceLabel.text = "Roll \(diceRoll): Score your roll on the scorecard."
@@ -85,51 +89,112 @@ class ViewController: UIViewController {
     
     @IBAction func diceSelected(_ sender: UIButton) {
         
-        sender.setImage(#imageLiteral(resourceName: "savedbackground"), for: .normal)
+        if(diceRoll > 0){
+            sender.setImage(#imageLiteral(resourceName: "savedbackground"), for: .normal)
+            
+            switch sender.tag {
+            case 1:
+                savedDice1.dieDots = currentDice1.dieDots
+                setSavedImage(die: savedDice1)
+                currentDice1.stillRolling = false
+                
+            case 2:
+                savedDice2.dieDots = currentDice2.dieDots
+                setSavedImage(die: savedDice2)
+                currentDice2.stillRolling = false
+            case 3:
+                savedDice3.dieDots = currentDice3.dieDots
+                setSavedImage(die: savedDice3)
+                currentDice3.stillRolling = false
+            case 4:
+                savedDice4.dieDots = currentDice4.dieDots
+                setSavedImage(die: savedDice4)
+                currentDice4.stillRolling = false
+            case 5:
+                savedDice5.dieDots = currentDice5.dieDots
+                setSavedImage(die: savedDice5)
+                currentDice5.stillRolling = false
+            default:
+                print("Error in diceSelected")
+            }
         
-        switch sender.tag {
-        case 1:
-            print("tag 1")
-            saved1.setImage(currentDice1, for: .normal)
+        }
+    }
+    
+    func setSavedImage(die: Die){
+        print("SetSavedImage with die no: \(die.dieNo) and dots: \(die.dieDots)")
+        var currentSavedButton: UIButton
 
+        switch die.dieNo {
+        case 1:
+            currentSavedButton = saved1
         case 2:
-            print("tag 2")
-            saved2.setImage(currentDice2, for: .normal)
+            currentSavedButton = saved2
         case 3:
-            print("tag 3")
-            saved3.setImage(currentDice3, for: .normal)
+            currentSavedButton = saved3
         case 4:
-            print("tag 4")
-            saved4.setImage(currentDice4, for: .normal)
+            currentSavedButton = saved4
         case 5:
-            print("tag 5")
-            saved5.setImage(currentDice5, for: .normal)
+            currentSavedButton = saved5
         default:
-            print("Error")
+            currentSavedButton = saved1
         }
         
-        //let image = sender.currentTitle
-        
-        
-        
-    
-        
-        //let image = sender.currentImage
-        //print("image: \(String(describing: image))")
-        
+        switch die.dieDots {
+        case 1:
+            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceOne"), for: .normal)
+        case 2:
+            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceTwo"), for: .normal)
+        case 3:
+            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceThree"), for: .normal)
+        case 4:
+            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceFour"), for: .normal)
+        case 5:
+            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceFive"), for: .normal)
+        case 6:
+            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceSix"), for: .normal)
+        default:
+            currentSavedButton.setImage(#imageLiteral(resourceName: "savedbackground"), for: .normal)
+        }
         
     }
-    /* @objc func diceImageTapped(gesture: UIGestureRecognizer) {
-        // if the tapped view is a UIImageView then set it to imageview
-        if (gesture.view as? UIImageView) != nil {
-            print("Image Tapped")
-            //Here you can initiate your new ViewController
-
-            let currentView = gesture.view
-            print(dice1.image.)
-            
-            }
-    }*/
+    
+    func setDieImage(die: Die){
+        
+        var currentButton: UIButton
+        
+        switch die.dieNo {
+        case 1:
+            currentButton = dice1
+        case 2:
+            currentButton = dice2
+        case 3:
+            currentButton = dice3
+        case 4:
+            currentButton = dice4
+        case 5:
+            currentButton = dice5
+        default:
+            currentButton = dice1
+        }
+        
+        switch die.dieDots {
+        case 1:
+            currentButton.setImage(#imageLiteral(resourceName: "DiceOne"), for: .normal)
+        case 2:
+            currentButton.setImage(#imageLiteral(resourceName: "DiceTwo"), for: .normal)
+        case 3:
+            currentButton.setImage(#imageLiteral(resourceName: "DiceThree"), for: .normal)
+        case 4:
+            currentButton.setImage(#imageLiteral(resourceName: "DiceFour"), for: .normal)
+        case 5:
+            currentButton.setImage(#imageLiteral(resourceName: "DiceFive"), for: .normal)
+        case 6:
+            currentButton.setImage(#imageLiteral(resourceName: "DiceSix"), for: .normal)
+        default:
+            currentButton.imageView?.image = #imageLiteral(resourceName: "savedbackground")
+        }
+    }
 }
     
 

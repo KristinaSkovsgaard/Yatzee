@@ -2,7 +2,7 @@
 //  YatzeeTests.swift
 //  YatzeeTests
 //
-//  Created by App og Blog on 05/02/2021.
+//  Created by Kristina Skovsgaard on 05/02/2021.
 //
 
 import XCTest
