@@ -142,17 +142,17 @@ class ViewController: UIViewController {
         
         switch die.dieDots {
         case 1:
-            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceOne"), for: .normal)
+            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceOneWhite"), for: .normal)
         case 2:
-            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceTwo"), for: .normal)
+            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceTwoWhite"), for: .normal)
         case 3:
-            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceThree"), for: .normal)
+            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceThreeWhite"), for: .normal)
         case 4:
-            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceFour"), for: .normal)
+            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceFourWhite"), for: .normal)
         case 5:
-            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceFive"), for: .normal)
+            currentSavedButton.setImage(#imageLiteral(resourceName: "DiveFiveWhite"), for: .normal)
         case 6:
-            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceSix"), for: .normal)
+            currentSavedButton.setImage(#imageLiteral(resourceName: "DiceSixWhite"), for: .normal)
         default:
             currentSavedButton.setImage(#imageLiteral(resourceName: "savedbackground"), for: .normal)
         }
@@ -180,17 +180,17 @@ class ViewController: UIViewController {
         
         switch die.dieDots {
         case 1:
-            currentButton.setImage(#imageLiteral(resourceName: "DiceOne"), for: .normal)
+            currentButton.setImage(#imageLiteral(resourceName: "DiceOneWhite"), for: .normal)
         case 2:
-            currentButton.setImage(#imageLiteral(resourceName: "DiceTwo"), for: .normal)
+            currentButton.setImage(#imageLiteral(resourceName: "DiceTwoWhite"), for: .normal)
         case 3:
-            currentButton.setImage(#imageLiteral(resourceName: "DiceThree"), for: .normal)
+            currentButton.setImage(#imageLiteral(resourceName: "DiceThreeWhite"), for: .normal)
         case 4:
-            currentButton.setImage(#imageLiteral(resourceName: "DiceFour"), for: .normal)
+            currentButton.setImage(#imageLiteral(resourceName: "DiceFourWhite"), for: .normal)
         case 5:
-            currentButton.setImage(#imageLiteral(resourceName: "DiceFive"), for: .normal)
+            currentButton.setImage(#imageLiteral(resourceName: "DiveFiveWhite"), for: .normal)
         case 6:
-            currentButton.setImage(#imageLiteral(resourceName: "DiceSix"), for: .normal)
+            currentButton.setImage(#imageLiteral(resourceName: "DiceSixWhite"), for: .normal)
         default:
             currentButton.imageView?.image = #imageLiteral(resourceName: "savedbackground")
         }

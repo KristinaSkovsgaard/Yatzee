@@ -76,21 +76,21 @@
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoM-1g-Cxo">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                                <state key="normal" image="DiceOne"/>
+                                                <state key="normal" image="DiceOneWhite"/>
                                                 <connections>
                                                     <action selector="diceSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LUX-hc-U8o"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1To-2g-F5s">
                                                 <rect key="frame" x="116" y="0.0" width="100" height="100"/>
-                                                <state key="normal" image="DiceTwo"/>
+                                                <state key="normal" image="DiceTwoWhite"/>
                                                 <connections>
                                                     <action selector="diceSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qs5-xg-H3y"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iah-iR-noh">
                                                 <rect key="frame" x="232" y="0.0" width="100" height="100"/>
-                                                <state key="normal" image="DiceThree"/>
+                                                <state key="normal" image="DiceThreeWhite"/>
                                                 <connections>
                                                     <action selector="diceSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HAS-cM-doD"/>
                                                 </connections>
@@ -102,14 +102,14 @@
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZx-SJ-rp1">
                                                 <rect key="frame" x="0.0" y="0.0" width="161" height="100"/>
-                                                <state key="normal" image="DiceFour"/>
+                                                <state key="normal" image="DiceFourWhite"/>
                                                 <connections>
                                                     <action selector="diceSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hbj-zi-uEC"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUN-YD-xLm">
                                                 <rect key="frame" x="171" y="0.0" width="161" height="100"/>
-                                                <state key="normal" image="DiceFive"/>
+                                                <state key="normal" image="DiveFiveWhite"/>
                                                 <connections>
                                                     <action selector="diceSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EUJ-L1-Eie"/>
                                                 </connections>
@@ -174,11 +174,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DiceFive" width="100" height="100"/>
-        <image name="DiceFour" width="100" height="100"/>
-        <image name="DiceOne" width="100" height="100"/>
-        <image name="DiceThree" width="100" height="100"/>
-        <image name="DiceTwo" width="100" height="100"/>
+        <image name="DiceFourWhite" width="100" height="100"/>
+        <image name="DiceOneWhite" width="100" height="100"/>
+        <image name="DiceThreeWhite" width="100" height="100"/>
+        <image name="DiceTwoWhite" width="100" height="100"/>
+        <image name="DiveFiveWhite" width="100" height="100"/>
         <image name="blue-background" width="997" height="1330.5"/>
         <image name="logo560" width="186.5" height="53.5"/>
         <image name="savedbackground" width="70" height="70"/>
